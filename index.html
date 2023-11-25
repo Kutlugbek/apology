@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Извинения</title>
+</head>
+<body>
+	<div id="container">
+		<div id="butterfly">
+			<div id="leftwing">
+			</div>
+			<div id="rightwing">
+			</div>
+		</div>
+		<div id="apology" class="content">
+			<h1>Прошу прощения...</h1>
+			<p>
+				Мы поссорились, и мне правда жаль.
+				В нашем предыдущем разговоре я находился в состоянии апатии и ангедонии, из-за чего ты пострадала.
+				Я осознаю свою полную ошибку и готов принять наказание. Тем не менее, сейчас у нас есть два варианта развития событий.
+				Ты можешь выбрать кнопку "Понять и Просить", если ты уже не так обижена на меня, или же можешь рискнув проверить мою и твою удачу, сыграв в игру крестики-нолики.
+				Предупреждаю: если выберешь второй вариант и не выиграешь игру то тебе придеться простить меня и в поуше влюбиться. Ладно, ладно, чересчур можно не прощать.
+			</p>
+			<button id="forgiveBtn" class="btn">Понять и Простить</button>
+			<button id="playGameBtn" class="btn">Я авантюристка, рискну</button>
+		</div>
+		<div id="game" class="content hidden">
+            <h1>Крестики-нолики</h1>
+            <div id="board" class="board">
+                <!-- Cells will be added dynamically using JavaScript -->
+            </div>
+            <p id="status" class="status">Ход: X</p>
+        </div>
+		<div id="if_win" class="content hidden">
+			<h1>Поздравляю! Вы выиграли! Но!!!</h1>
+			<p>Мэм, мэм, пожалуйста простите моего создателя, пожалуйста!!! Я проиграл, это не он виноват в моей тупости, ошибся. Я же робот, а он же человек он будет страдать если вы не простите. Пожалуйстаааа, он так старается :((</p>
+		</div>
+		<div id="if_lose" class="content hidden">
+			<h1>К сожалению вы проиграли</h1>
+			<p>Чтож дорогуша, вы проиграли и как обещали за вами любовь и прощения. Ладно пока можно без чувств :)))</p>
+		</div>
+		<div id="if_okay" class="content hidden">
+			<img src="https://img.freepik.com/premium-photo/happy-monkey-laughing_849973-583.jpg" alt="">
+			<p>Обожаюююю, обещаю, не подведу вас :)))</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
